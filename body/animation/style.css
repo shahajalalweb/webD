@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    width: 1536px;
+    display: block;
+  }
+
+.container {
+    width: 1536px;
+    height: 100px;
+    background-color: antiquewhite;
+    margin-top: 15%;
+    display: block;
+}
+.container h2{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.container p {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  display: inline-block;
+  left: -170px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {left:22%; top:0px;}
+  5%   {color: aqua;}
+  10%   {color: rgb(73, 61, 143);}
+  15%   {color: rgb(243, 24, 35);}
+  20%   {color: rgb(205, 230, 94);}
+  25%   {color: rgb(56, 248, 130);}
+  30%   {color: rgb(251, 255, 0);}
+  35%   {color: rgb(250, 32, 86);}
+  40%   {color: rgb(255, 30, 0);}
+  45%   {color: aqua;}
+  50%   {color: rgb(255, 0, 200);}
+  55%   {color: rgb(43, 255, 0);}
+  60%   {color: rgb(226, 250, 12);}
+  65%   {color: rgb(132, 0, 255);}
+  70%   {color: rgb(17, 253, 37);}
+  75%   {color: rgb(255, 0, 149);}
+  80%   {color: rgb(205, 252, 34);}
+  85%   {color: rgb(8, 156, 57);}
+  90%   {color: rgb(55, 0, 255);}
+  95%   {color: rgb(231, 23, 169);}
+  100% {left:60%; top:0px;}
+}
